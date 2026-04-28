@@ -1,0 +1,6 @@
+.vscode/settings.json
+README.md.bak
+*.symbols.txt
+*.bin
+*.lst
+*.obj
