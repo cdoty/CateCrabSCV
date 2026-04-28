@@ -1,0 +1,12 @@
+constexpr byte	PlayerSprite		= 0;		// Player sprite starting number
+constexpr byte	PlaySpritePattern	= 101;		// Player sprite starting pattern
+constexpr byte	PlayerSpriteColor	= 8;		// Player sprite color
+constexpr byte	PlayerEyeColor		= 1;		// Player eye color
+constexpr byte	PlayerStartX		= 124;		// Player start position
+constexpr byte	PlayerStartY		= 230;	
+constexpr byte	ClawYOffset			= 4;		// Claw offset
+constexpr byte	MinPlayerLeft		= 22;		// Minimum player left
+constexpr byte	MaxPlayerRight		= 224 - 6;	// Maximum player right
+constexpr byte	MoveSpeed			= 1;		// Move speed per frame
+constexpr byte	AnimationDelay		= 6;		// Animation delay
+constexpr byte	AnimationFrames		= 3;		// Animation frames
