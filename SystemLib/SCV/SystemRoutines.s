@@ -5,10 +5,6 @@ include "../../System/VRAMDefines.inc"
 ext	nmiCount
 ext	int2Handler
 
-zseg
-color:
-	ds	1
-
 cseg
 
 enableIRQ_:	public enableIRQ_
