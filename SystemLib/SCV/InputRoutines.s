@@ -1,7 +1,7 @@
 include "../../System/InputDefines.inc"
 include "../../System/SystemDefines.inc"
 
-zseg
+dseg
 
 joystick1Value:	public joystick1Value
     ds	1

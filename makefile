@@ -9,8 +9,7 @@ console		= SCV
 
 # Set the ROM and RAM start addresses
 cseg		= 8000-FFFF
-dseg	 	= FFA0
-zseg		= FF80
+dseg	 	= FF80
 
 # Set comment settings
 mameSystem	= scv
@@ -57,7 +56,7 @@ lists 		+= $(Graphics_S:.s=.lst)
 all: $(name).$(extension)
 
 $(name).$(extension): $(system) $(objects) $(graphics)
-#	$(BIN_PATH)/LinkLE $(name).$(extension) $(cseg) $(dseg) $(zseg) $(system) $(objects) $(graphics) $(libs)
+	$(BIN_PATH)/LinkLE $(name).$(extension) $(cseg) $(dseg) $(system) $(objects) $(graphics) $(libs)
 #	$(TOOLS_PATH)/CreateComments $(mameSystem) $(cpuTag) $(name).symbols.txt $(name).$(extension) ../../mame/comments
 
 clean:

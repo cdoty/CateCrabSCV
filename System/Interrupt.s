@@ -1,6 +1,6 @@
 include "SystemDefines.inc"
 
-zseg
+dseg
 
 nmiCount:	public nmiCount
 	ds	1

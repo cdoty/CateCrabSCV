@@ -5,7 +5,7 @@ include "../../../System/VRAMDefines.inc"
 ext	transferToVRAM_
 ext	clearVRAMWithParameters
 
-zseg
+dseg
 
 selectedSprite:	public selectedSprite
 	ds	2
