@@ -14,6 +14,7 @@ void startGame()
 {
 	exitGame	= false;
 
+	initRandSeed();
 	clearJoysticks();
 	clearSprites();
 

@@ -2,8 +2,9 @@ include "../../Game/GameDefines.inc"
 include "../../System/SystemDefines.inc"
 include "../../System/VRAMDefines.inc"
 
-ext	nmiCount
+ext	frameCount
 ext	int2Handler
+ext	nmiCount
 
 cseg
 
@@ -34,6 +35,10 @@ waitForVBlankLoop:
 
 	sbi		a, VBlankCount
 	staw	nmiCount
+	
+	mov		a, frameCount
+	adi		a, 1
+	mov		frameCount, a
 	
 	ei
 
